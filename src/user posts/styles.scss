@@ -1,0 +1,35 @@
+.posts {
+    // max-height: 100vh;
+    // overflow-y: auto;
+    &__title {
+        color: #60dbb4;
+    }
+
+    &__body {
+        color: #b4c0c5;
+    }
+
+    &__button {
+        background-color: #3bd2a2;
+        color: #fff;
+        width: fit-content;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+}
+
+.posts-scroll-container {
+    transition: all 1s all ease-in-out;
+    .thumb-vertical {
+        background-color: #42b18e;
+        transition: .2s opacity ease-in-out;
+        border-radius: 10px;
+        opacity: 0;
+    }
+
+    &:hover {
+        .thumb-vertical {
+            opacity: 1 !important;
+        }
+    }
+}
